@@ -31,7 +31,14 @@ namespace DataBase
 
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Close();
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {       
+            Form Formnameone = new Form2();   
+            Formnameone.ShowDialog();
+           
         }
     }
 }
