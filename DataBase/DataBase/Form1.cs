@@ -48,7 +48,8 @@ namespace DataBase
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Form Formnamethird = new Form4();
+            Formnamethird.ShowDialog();
         }
     }
 }
