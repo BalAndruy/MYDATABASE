@@ -35,14 +35,20 @@ namespace DataBase
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {             
-           
+        {
+            Form Formnamesec = new Form3();
+            Formnamesec.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Form Formnameone = new Form2();
             Formnameone.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
