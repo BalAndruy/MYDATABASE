@@ -36,5 +36,41 @@ namespace DataBase
         {
             Close();  
         }
+
+        private void fillByStudToolStripButton_Click(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void fillByStudToolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.studentsTableAdapter.FillByStud(this.dataSet2.Students);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void searchStudToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.studentsTableAdapter.SearchStud(this.dataSet2.Students, idStudentToolStripTextBox.Text, fullNameToolStripTextBox.Text, passportToolStripTextBox.Text);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
     }
 }

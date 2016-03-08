@@ -51,5 +51,11 @@ namespace DataBase
             Form Formnamethird = new Form4();
             Formnamethird.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form Formnamethird = new Form5();
+            Formnamethird.ShowDialog();
+        }
     }
 }
